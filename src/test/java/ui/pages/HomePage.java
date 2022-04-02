@@ -25,7 +25,7 @@ public class HomePage {
     @FindBy(id = "nav-link-accountList-nav-line-1")
     public WebElement navUser;
 
-    @FindBy(xpath= "\"//*[@id=\"nav-logo-sprites\"]\"")
+    @FindBy(id= "nav-logo-sprites")
     public WebElement amazonLogo;
 
     @FindBy(id = "searchDropdownBox")

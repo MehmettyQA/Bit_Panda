@@ -21,7 +21,7 @@ public abstract class Driver {
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver(new ChromeOptions().addArguments("--lang=en"));
                     break;
 
                 case "firefox":
